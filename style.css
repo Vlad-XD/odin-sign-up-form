@@ -15,7 +15,7 @@ input, button, textarea, select {
   --form-color: white;
   --background-color: #f1f1f1;
   --button-color: #596D48;
-  --input-border-color: #ebe5e5;
+  --input-border-color: lightgray;
   --invalid-input-color: rgb(226, 103, 103);
   --active-input-color: rgb(59, 143, 211);
   --default-font-size: 0.75rem;
@@ -150,13 +150,15 @@ a.login-link:visited {
 
 input {
   margin-bottom: 0.75rem;
-  border: 0.05rem solid lightgray;
+  border: 0.05rem solid var(--input-border-color);
   border-radius: 0.15rem;
 }
 
 input:focus,
 input:focus-visible {
+  outline:none;
   border-color: var(--active-input-color);
+  box-shadow: 0.15rem 0.15rem 1rem rgba(0, 0, 0, 0.25);
 }
 
 input:invalid {

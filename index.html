@@ -33,15 +33,25 @@
             <label for="">EMAIL</label>
             <input type="email" id="email" name="email" />
             <label for="">PASSWORD</label>
-            <input type="text" id="password" name="password" />
+            <input type="text" id="password" name="password" minlength="8" />
           </div>
           <div class="form-section">
             <label for="last-name">LAST NAME</label>
             <input type="text" id="last-name" name="last-name" />
             <label for="">PHONE NUMBER</label>
-            <input type="tel" id="phone-number" name="phone-number" />
+            <input
+              type="tel"
+              id="phone-number"
+              name="phone-number"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
             <label for="">CONFIRM PASSWORD</label>
-            <input type="text" id="password-confirm" name="password-confirm" />
+            <input
+              type="text"
+              id="password-confirm"
+              name="password-confirm"
+              minlength="8"
+            />
           </div>
         </div>
       </form>
