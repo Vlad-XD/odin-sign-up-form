@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <title>Sign-Up Form</title>
   </head>
   <body>
     <div class="side-panel">
       <div class="img-background">
-        <img src="./assets/images/logo.png" alt="odin logo">
+        <img src="./assets/images/logo.png" alt="odin logo" />
         <h1 class="logo-heading">ODIN</h1>
       </div>
     </div>
     <div class="content-container">
       <div class="header">
         <div class="header-quote">
-          <p>
+          <p class="quote">
             This is not a real online service! You know you need something like
             in your life to help you realize your deepest dreams. Sign up
             <em>now</em> to get started.
@@ -26,26 +26,29 @@
       </div>
       <form action="" method="post">
         <p class="form-title">Let's do this!</p>
-        <div class="form-section">
-          <label for="first-name">FIRST NAME</label>
-          <input type="text" id="first-name" name="first-name" />
-          <label for="">EMAIL</label>
-          <input type="email" id="email" name="email" />
-          <label for="">PASSWORD</label>
-          <input type="text" id="password" name="password" />
-        </div>
-        <div class="form-section">
-          <label for="last-name">LAST NAME</label>
-          <input type="text" id="last-name" name="last-name" />
-          <label for="">PHONE NUMBER</label>
-          <input type="tel" id="phone-number" name="phone-number" />
-          <label for="">CONFIRM PASSWORD</label>
-          <input type="text" id="password-confirm" name="password-confirm" />
+        <div class="form-container">
+          <div class="form-section">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name" />
+            <label for="">EMAIL</label>
+            <input type="email" id="email" name="email" />
+            <label for="">PASSWORD</label>
+            <input type="text" id="password" name="password" />
+          </div>
+          <div class="form-section">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name" />
+            <label for="">PHONE NUMBER</label>
+            <input type="tel" id="phone-number" name="phone-number" />
+            <label for="">CONFIRM PASSWORD</label>
+            <input type="text" id="password-confirm" name="password-confirm" />
+          </div>
         </div>
       </form>
-      <div class="footer"></div>
-      <button class="account-create-btn" type="submit">Create Account</button>
-      <p>Already have an account?<a class="login-link" href="">Log in</a></p>
+      <div class="footer">
+        <button class="account-create-btn" type="submit">Create Account</button>
+        <p>Already have an account? <a class="login-link" href="">Log in</a></p>
+      </div>
     </div>
   </body>
 </html>
