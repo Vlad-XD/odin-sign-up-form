@@ -1,3 +1,95 @@
+/* resets */
+
+/* Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+:root {
+  --form-color: white;
+  --background-color: #f1f1f1;
+  --button-color: #596D48;
+  --input-border-color: #ebe5e5;
+  --invalid-input-color: rgb(226, 103, 103);
+  --default-font-size: 0.75rem;
+  --logo-font-size: 5rem;
+  --label-font-size: 0.5rem;
+  --larger-font-size: 1.15rem;
+}
+
+@font-face {
+  font-family: Norse-Bold;
+  src: url(./assets/fonts/Norse-Bold.otf);
+}
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  font-size: var(--default-font-size);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.side-panel {
+  background-image: url("./assets/images/form-background.jpg");
+}
+
+.side-panel .img-background {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.side-panel img {
+  /* Logo image should be slightly bigger than logo */
+  height: calc(var(--logo-font-size)*1.25);
+  width: auto;
+}
+
+.side-panel .logo-heading {
+  color: white;
+  font-family: Norse-Bold;
+  font-size: var(--logo-font-size);
+}
+
+.content-container {
+  background-color: var(--background-color);
+}
+
+.content-container .header-quote,
+.content-container .form-title {
+  font-size: var(--larger-font-size);
+  font-weight: bold;
+}
+
+form {
+  background-color: var(--form-color);
+}
+
+label {
+  font-size: var(--label-font-size);
+  font-weight: 600;
+}
+
+button.account-create-btn {
+  background-color: var(--button-color);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+}
+
+a.login-link {
+  text-decoration: none;
+  color: var(--button-color);
+}
+
+a.login-link:hover {
+  text-decoration: underline;
+}
+
+a.login-link:visited {
+  color: var(--button-color);
 }
